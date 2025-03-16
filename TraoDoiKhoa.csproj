@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\lock_key.ico</ApplicationIcon>
+    <AssemblyName>TraoDoiKhoa</AssemblyName>
+    <Product>Trao Đổi Khóa</Product>
+    <Version>1.0.0</Version>
+    
+    <!-- Cấu hình tương thích Windows -->
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+    
+    <!-- Tối ưu kích thước file xuất -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Resource Include="images\lock_key.ico" />
+  </ItemGroup>
+</Project> 

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+<PropertyGroup>
+  <OutputType>WinExe</OutputType> <!-- Đảm bảo đây là ứng dụng GUI, không có cửa sổ console -->
+  <ApplicationIcon>Images/lock_key.ico</ApplicationIcon> <!-- Đường dẫn tới file icon -->
+</PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\lock_key.ico" />
+    <None Remove="Images\ms.ico" />
+    <None Remove="Images\security.ico" />
+    <None Remove="Images\us.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\lock_key.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ms.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\security.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\us.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
